@@ -1,14 +1,14 @@
-# 2.0 Installation of agents
-  - 2.1 Install and update using OVA <!--11-->
-  - 2.2 Installing agents <!--71-->
-    - 2.2.1 Ubuntu linux (DEBIAN) installation <!--76-->
-    - 2.2.2 Remove agents Ubuntu <!--111-->
-    - 2.2.3 Windows installation <!--174-->
-    - 2.2.4 Remove agent Windows <!--202-->
+# 1.0 Installation of agents
+  - 1.1 Install and update using OVA <!--11-->
+  - 1.2 Installing agents <!--71-->
+    - 1.2.1 Ubuntu linux (DEBIAN) installation <!--76-->
+    - 1.2.2 Remove agents Ubuntu <!--111-->
+    - 1.2.3 Windows installation <!--174-->
+    - 1.2.4 Remove agent Windows <!--202-->
 
 ---
 
-## 2.1 Install and update using OVA
+## 1.1 Install and update using OVA
 So far I tried installation on proxmox and virtualbox installations:
 
 ### For VirtualBox 
@@ -68,12 +68,12 @@ If you’re running a multi-node setup or using custom configurations, it’s be
 
 ---
 
-## 2.2 Installing agents
+## 1.2 Installing agents
 This section covers basic agent installation on Ubuntu (Debian-based) and Windows systems, as part of integrating Wazuh into a home lab SIEM setup. Here is the manual method as apposed to the method through wazuh interface. I found the wazuh interface did not work well for Ubuntu agent and required either installation of agent from the Wazuh home page or using a manual install. Installing the agents appeared straight forward through the wazuh interface, working perfectly for Windows except Ubuntu agent seemed to fail. The following manual method works fine for either.
 
 ---
 
-## 2.2.1 Ubuntu (Debian-based)
+## 1.2.1 Ubuntu (Debian-based)
 
 Install Wazuh Agent:
 
@@ -109,7 +109,7 @@ sudo systemctl restart wazuh-agent
 
 ---
 
-## 2.2.2 Remove agents Ubuntu
+## 1.2.2 Remove agents Ubuntu
 
 To remove the **Wazuh user agent** on Ubuntu using the **Wazuh manager**, follow these steps:
 
@@ -172,7 +172,7 @@ For more details, check out [this guide](https://documentation.wazuh.com/current
 
 ---
 
-## 2.2.3 Windows:
+## 1.2.3 Windows:
 Install Wazuh Agent (using powershell):
 
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.1.5-1.msi -OutFile wazuh-agent.msi
@@ -202,7 +202,7 @@ Restart-Service -Name wazuh
 
 ---
 
-## 2.2.4 Remove agent Windows
+## 1.2.4 Remove agent Windows
 
 Removing the **Wazuh agent** on Windows is slightly different from Ubuntu. Here’s how you can do it:
 
