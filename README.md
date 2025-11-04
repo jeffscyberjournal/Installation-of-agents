@@ -94,13 +94,14 @@ sudo systemctl start wazuh-agent
 
 nano /var/ossec/etc/ossec.conf
 
-```<client>
+```
+<client>
   <server>
     <address>10.10.10.110</address>
     ...
   </server>
-</client>```
-
+</client>
+```
 
 ### Restart Agent:
 
@@ -185,12 +186,14 @@ Start-Process -FilePath .\wazuh-agent.msi -ArgumentList "/q WAZUH_MANAGER='<WAZU
 
 C:\Program Files (x86)\ossec-agent\ossec.conf
 
-```<client>
+```
+<client>
   <server>
     <address10.10.10.110</address>
     ...
   </server>
-</client>```
+</client>
+```
 
 
 ### Restart Agent (powershell):
